@@ -8,7 +8,7 @@ This repo is a small collection of (quick and dirty) custom editor themes for [T
 
 1. Download this repo as zip
 2. Unzip the downloaded file
-3. drop them into `~/Library/Application Support/Texts/` folder on Mac OS X or into `%LOCALAPPDATA%\Texts\` folder on Windows
+3. drop .theme files into `~/Library/Application Support/Texts/` folder on Mac OS X or into `%LOCALAPPDATA%\Texts\` folder on Windows
 
 Those themes are now available in the "View > Theme" menu.
 
