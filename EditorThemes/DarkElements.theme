@@ -1,0 +1,198 @@
+/**************************** Dark Color Scheme ****************************/
+
+/* main text */
+body
+{
+  background-color: #2E2E2E;
+  color: #DADADA;
+}
+
+div {
+  font-size: 1em;
+  line-height: 1.75;
+  margin-top: 1.75em;
+ font-family: Charter, "Charter Roman", Palatino, Cambria, serif; /* OSX 10.9, OSX 10.8, Windows */
+ max-width: 35em;
+
+}
+
+div.Heading.Indent0 {
+	font-family: Seravek, "Gill Sans", "Century Gothic", Avenir, sans-serif;
+ font-size: 2.827em;
+  line-height: 1.238;
+  font-weight: 200;
+  margin: 2.476em 0 1.238em 0;
+  	  color: #DADADA;
+}
+
+div.Heading.Indent1 {
+	font-family: Seravek, "Gill Sans", "Century Gothic", Avenir, sans-serif;
+  font-size: 1.999em;
+  line-height: 1.759;
+  margin: 1.759em 0 0 0;
+  font-weight: 400;
+    color: #DADADA;
+}
+
+div.Heading.Indent1:before {
+	content: '•';
+	float: right;
+}
+
+div.Heading.Indent2 {
+	font-family: Seravek, "Gill Sans", "Century Gothic", Avenir, sans-serif;
+  font-size: 1.414em;
+  line-height: 1.237;
+  font-style: 600;
+  margin: 1.237em 0;
+    color: #DADADA;
+}
+
+div.Heading.Indent2:before {
+	content: '••';
+	float: right;
+}
+
+div.Heading.Indent3, div.Heading.Indent4 {
+	font-family: Seravek, "Gill Sans", "Century Gothic", Avenir, sans-serif;
+   font-size: 1em;
+  line-height: 1.75;
+  font-style: 600;
+  margin: 1.75em 0 0 0;
+    color: #DADADA;
+  text-transform: uppercase;
+  max-width: 42em;
+}
+
+div.Heading.Indent3:before {
+	content: '•••';
+	float: right;
+}
+
+div.Heading.Indent4:before {
+	content: '••••';
+	float: right;
+}
+
+div.Heading.Indent3 + div, div.Heading.Indent4 + div {
+	margin-top: 0;
+}
+
+div.Quotation {
+	margin: 1.75em 0 1.75em 32px;
+	font-style: italic;
+	font-size: 1em;
+	line-height: 1.75;
+}
+
+div.Heading.Indent0:first-child {
+  margin-top: 0;
+}
+
+/* selection */
+::selection
+{
+  background: #F2F5A9;
+}
+
+/* scrollbar */
+::-webkit-scrollbar
+{
+  width: 5px;
+  background-color: #2E2E2E;
+}
+
+::-webkit-scrollbar-thumb
+{
+  border-radius: 0;
+  background-color: #666;
+}
+
+div.Comment
+{
+  background-color: #A4A4A4;
+}
+
+/* headings and square image sign */
+div.Heading,
+div.Image span.Prefix:before
+{
+  color: #DADADA;
+}
+
+/* code blocks and spans */
+div.Code,
+span.Code
+{
+  color: #AD9361;
+}
+
+/* border around code blocks */
+div.Code
+{
+  border: none;
+  padding: 0;
+  margin: 1.75em 0 1.75em 32px
+}
+
+/* math blocks and spans */
+div.Formula,
+span.Math
+{
+  color: #C1C144;
+}
+
+/* bullets and numbers */
+span.Prefix
+{
+  color: #999;
+}
+
+/* URLs and link text underlining */
+span.Url,
+span.LinkText
+{
+  border-bottom-color: #999;
+}
+
+/* references */
+span.NoteRef
+{
+  color: #999;
+  border-color: #999;
+}
+
+/* all text in notes */
+div.Note span.Plain,
+div.Note span.Emphasis,
+div.Note span.Strong,
+div.Note span.Url,
+div.Note span.LinkText
+{
+  color: #999;
+}
+
+/* URLs in image blocks */
+div.Image span.Url
+{
+  color: #999;
+}
+
+/* active spans (except plain text) */
+span#ActiveSpan:not(.Plain):not(.Prefix)
+{
+  background-color: #000;
+}
+
+/**************************** Navigation Hovering *****************************/
+
+.navigation span.Url:hover {
+  color: #DE8E30;
+  border-bottom-color: #DE8E30;
+}
+
+.navigation span.NoteRef:hover {
+  color: #DE8E30;
+  border-color: #DE8E30;
+  border-style: solid;
+}

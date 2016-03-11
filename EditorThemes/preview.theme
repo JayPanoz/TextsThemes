@@ -1,0 +1,188 @@
+@charset "UTF-8";
+
+/* main text */
+body
+{
+  background-color: #FFF;
+  color: #333;
+  max-width: 37.5em;
+  margin: 0 auto;
+}
+
+div.Title {
+  font-size: 36px;
+  line-height: 48px;
+text-align: right;
+  margin: 0;
+  font-weight: 700;
+}
+
+div.Author {
+  font-size: 21px;
+  line-height: 27px;
+  text-align: right;
+  font-style: italic;
+  margin: 0 0 108px 0;
+}
+
+div {
+  font-size: 18px;
+  line-height: 27px;
+  margin: 0;
+  text-indent: 18px;
+ font-family: "Alegreya Sans", sans-serif;
+}
+
+div.Heading.Indent0 {
+  font-size: 36px;
+  line-height: 54px;
+  font-weight: 900;
+  margin: 108px 0 54px 0;
+  color: #333;
+}
+
+div.Heading.Indent1 {
+  font-size: 26px;
+  line-height: 27px;
+font-weight: 700;
+  margin: 54px 0 27px 0;
+  color: #333;
+}
+
+div.Heading.Indent2 {
+  font-size: 21px;
+  line-height: 27px;
+  margin: 27px 0;
+  color: #333;
+  font-variant: small-caps;
+}
+
+div.Heading.Indent0 + div,
+div.Heading.Indent1 + div,
+div.Heading.Indent2 + div,
+div.Quotation + div {
+  text-indent: 0;
+}
+
+div.Quotation {
+	margin: 27px 18px;
+	font-style: italic;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+
+/* code blocks and spans */
+div.Code,
+span.Code
+{
+  color: #888;
+  font-family: Lekton, monospace;
+  font-weight: bold;
+  font-size: 18.5px;
+}
+
+/* border around code blocks */
+div.Code
+{
+  border: 1px solid #999;
+  padding: 13px 18px;
+}
+
+/* math blocks and spans */
+div.Formula,
+span.Math
+{
+  color: #888;
+}
+
+/* bullets and numbers */
+
+div.Numbered,
+ div.Bulleted {
+  margin: 0 0 0 0;
+  text-indent: 0;
+  padding-left: 18px;
+}
+
+div:not(.Numbered) + div.Numbered,
+div:not(.Bulleted) + div.Bulleted,
+div.Numbered + div:not(.Numbered),
+div.Bulleted + div:not(.Bulleted) {
+  margin-top: 27px;
+}
+
+span.Prefix {
+width: auto;
+  color: #999;
+  margin-left: -26px;
+}
+
+span.Prefix:before {
+  content: " ";
+}
+
+div.Numbered span.Prefix:before {
+
+}
+
+div.Note span.Prefix:before {
+  content: "¶";
+}
+
+div.Bulleted span.Prefix:before {
+  content: "—";
+}
+
+div.Definition span.Prefix:before {
+  content: "~";
+}
+
+/* URLs and link text underlining */
+span.Url,
+span.LinkText
+{
+  color: inherit;
+}
+
+/* references */
+span.NoteRef
+{
+  color: #999;
+  border-color: #999;
+}
+
+/* all text in notes */
+div.Note span.Plain,
+div.Note span.Emphasis,
+div.Note span.Strong,
+div.Note span.Url,
+div.Note span.LinkText
+{
+  color: #999;
+}
+
+/* URLs in image blocks */
+div.Image span.Url
+{
+  color: inherit;
+}
+
+/* active spans (except plain text) */
+span#ActiveSpan:not(.Plain):not(.Prefix)
+{
+  background-color: #000;
+}
+
+/**************************** Navigation Hovering *****************************/
+
+.navigation span.Url:hover {
+  color: #DE8E30;
+  border-bottom-color: #DE8E30;
+}
+
+.navigation span.NoteRef:hover {
+  color: #DE8E30;
+  border-color: #DE8E30;
+  border-style: solid;
+}

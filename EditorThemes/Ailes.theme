@@ -1,0 +1,165 @@
+/**************************** Dark Color Scheme ****************************/
+
+/* main text */
+body
+{
+  background-color: #E6E6E6;
+  color: #111;
+}
+
+div {
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 24px;
+ font-family: "Avenir Next", Avenir, Helvetica, sans-serif;
+
+}
+
+div.Heading.Indent0 {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 200;
+  margin: 96px 0 48px 0;
+  text-transform: uppercase;
+  	letter-spacing: 1px;
+  	word-spacing: 2px;
+  	  color: #111;
+}
+
+div.Heading.Indent1 {
+  font-size: 24px;
+  line-height: 24px;
+  margin: 32px 0 16px 0;
+  font-weight: 400;
+    color: #111;
+}
+
+div.Heading.Indent2 {
+  font-size: 16px;
+  line-height: 24px;
+  font-style: 400;
+  margin: 24px 0 0 0;
+  text-decoration: underline;
+    color: #111;
+}
+
+
+div.Quotation {
+	margin: 24px;
+	font-style: normal;
+	color: #333;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+div.Heading.Indent0:first-child {
+  margin-top: 0;
+}
+
+/* selection */
+::selection
+{
+  background : #E6E6E6;
+}
+
+/* scrollbar */
+::-webkit-scrollbar
+{
+  width: 8px;
+  background-color: #E6E6E6;
+}
+
+::-webkit-scrollbar-thumb
+{
+  border-radius: 0;
+  background-color: #666;
+  opacity: 0.5;
+}
+
+div.Comment
+{
+  background-color: #A4A4A4;
+}
+
+/* headings and square image sign */
+div.Heading,
+div.Image span.Prefix:before
+{
+  color: #DADADA;
+}
+
+/* code blocks and spans */
+div.Code,
+span.Code
+{
+  color: #AD9361;
+}
+
+/* border around code blocks */
+div.Code
+{
+  border: 1px solid #333;
+  padding: 4px 8px;
+}
+
+/* math blocks and spans */
+div.Formula,
+span.Math
+{
+  color: #C1C144;
+}
+
+/* bullets and numbers */
+span.Prefix
+{
+  color: #333;
+}
+
+/* URLs and link text underlining */
+span.Url,
+span.LinkText
+{
+  border-bottom-color: #333;
+}
+
+/* references */
+span.NoteRef
+{
+  color: #333;
+  border-color: #333;
+}
+
+/* all text in notes */
+div.Note span.Plain,
+div.Note span.Emphasis,
+div.Note span.Strong,
+div.Note span.Url,
+div.Note span.LinkText
+{
+  color: #333;
+}
+
+/* URLs in image blocks */
+div.Image span.Url
+{
+  color: #333;
+}
+
+/* active spans (except plain text) */
+span#ActiveSpan:not(.Plain):not(.Prefix)
+{
+  background-color: #000;
+}
+
+/**************************** Navigation Hovering *****************************/
+
+.navigation span.Url:hover {
+  color: #DE8E30;
+  border-bottom-color: #DE8E30;
+}
+
+.navigation span.NoteRef:hover {
+  color: #DE8E30;
+  border-color: #DE8E30;
+  border-style: solid;
+}
